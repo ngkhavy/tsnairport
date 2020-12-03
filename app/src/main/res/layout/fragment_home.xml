@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundmain"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/home">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/hamburger"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Home"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:src="@drawable/account"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/qr"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintHorizontal_bias="0.867"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textSize="30sp"
+                android:textColor="@color/bluefont"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+                <Button
+                    android:layout_width="135dp"
+                    android:layout_height="108dp"
+                    android:text="Booking"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/blue"/>
+
+                <Button
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="135dp"
+                    android:layout_height="108dp"
+                    android:backgroundTint="@color/blue"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:text="Scan to make payment" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="Your Next Flight"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/bluefont"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="331dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/white">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="22:55"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.454"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.19" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lableflight"
+                    android:backgroundTint="@color/label"
+                    android:text="SGN"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.458"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1d 10h 30m"
+                    android:textColor="@color/caption"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.694"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.393" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/border"
+                    android:backgroundTint="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.697"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.506" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 stops"
+                    android:textColor="@color/caption"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.687"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.622" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/lableflight"
+                    android:backgroundTint="@color/label"
+                    android:text="MEL"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.871"
+                    app:layout_constraintStart_toEndOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    app:layout_constraintVertical_bias="0.09" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="13:35"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.839"
+                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.166" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="29, Jan 2021"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.026"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Departure date"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.027"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/vietnamairlines"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="Departures"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluefont"/>
+
+            <TableLayout
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="20dp"
+                android:stretchColumns="*">
+                <TableRow>
+                    <TextView
+                        android:layout_span="3"
+                        android:text="*Your next flight is in red"
+                        android:textSize="10sp"
+                        android:gravity="right"
+                        android:textStyle="italic"
+                        android:paddingTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="2dp"
+                        android:textColor="#FF0000"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flight No."
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Destination"
+                        android:textStyle="bold"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TU 4709"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BERLIN"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16:30"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UA 6385"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HONG KONG"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18:10"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CA 2556"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NEW YORK"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20:35"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PE 4823"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#FF1100"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MELBOURNE"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#FF1100"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22:55"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#FF1100"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CX 4161"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CHICAGO"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20:10"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:text="Promotions"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/bluefont"/>
+           <TableLayout
+               android:layout_width="331dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:background="@color/backgroundmain"
+               android:layout_marginTop="20dp"
+               android:layout_marginBottom="20dp"
+               >
+               <TableRow >
+                   <LinearLayout
+                       android:layout_width="165.5dp"
+                       android:layout_height="wrap_content"
+
+                       >
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="160dp"
+                           android:layout_height="wrap_content"
+                           app:cardCornerRadius="10dp"
+                           >
+                           <LinearLayout
+                               android:layout_width="160dp"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:background="@color/white">
+                               <ImageView
+                                   android:layout_width="160dp"
+                                   android:layout_height="160dp"
+                                   android:src="@drawable/pm1"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="1.5dp"
+                                   android:text="Best promotion here!"
+                                   android:textColor="@color/black"
+                                   android:layout_marginTop="5dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="31/12/2020"
+                                   android:layout_marginTop="1.5dp"
+                                   android:layout_marginBottom="1.5dp"
+                                   android:layout_marginRight="5dp"
+                                   android:textSize="12sp"
+                                   android:textColor="@color/note"
+                                   android:layout_gravity="end"
+                                   android:drawablePadding="1dp"
+                                   android:drawableTint="@color/note"
+                                   android:drawableStart="@drawable/deadline"/>
+
+                           </LinearLayout>
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="165.5dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="right"
+                       >
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="160dp"
+                           android:layout_height="wrap_content"
+                           app:cardCornerRadius="10dp"
+
+                           >
+                           <LinearLayout
+                               android:layout_width="160dp"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:background="@color/white">
+                               <ImageView
+                                   android:layout_width="160dp"
+                                   android:layout_height="160dp"
+                                   android:src="@drawable/pm2"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="1.5dp"
+                                   android:text="Best promotion here!"
+                                   android:textColor="@color/black"
+                                   android:layout_marginTop="5dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="31/12/2020"
+                                   android:layout_marginTop="1.5dp"
+                                   android:layout_marginBottom="1.5dp"
+                                   android:layout_marginRight="5dp"
+                                   android:textSize="12sp"
+                                   android:textColor="@color/note"
+                                   android:layout_gravity="end"
+                                   android:drawablePadding="1dp"
+                                   android:drawableTint="@color/note"
+                                   android:drawableStart="@drawable/deadline"/>
+
+                           </LinearLayout>
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+
+               </TableRow>
+               <TableRow android:layout_marginTop="15dp" >
+                   <LinearLayout
+                       android:layout_width="165.5dp"
+                       android:layout_height="wrap_content"
+
+                       >
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="160dp"
+                           android:layout_height="wrap_content"
+                           app:cardCornerRadius="10dp"
+                           >
+                           <LinearLayout
+                               android:layout_width="160dp"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:background="@color/white">
+                               <ImageView
+                                   android:layout_width="160dp"
+                                   android:layout_height="160dp"
+                                   android:src="@drawable/pm3"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="1.5dp"
+                                   android:text="Best promotion here!"
+                                   android:textColor="@color/black"
+                                   android:layout_marginTop="5dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="31/12/2020"
+                                   android:layout_marginTop="1.5dp"
+                                   android:layout_marginBottom="1.5dp"
+                                   android:layout_marginRight="5dp"
+                                   android:textSize="12sp"
+                                   android:textColor="@color/note"
+                                   android:layout_gravity="end"
+                                   android:drawablePadding="1dp"
+                                   android:drawableTint="@color/note"
+                                   android:drawableStart="@drawable/deadline"/>
+
+                           </LinearLayout>
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="165.5dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="right"
+
+                       >
+                       <androidx.cardview.widget.CardView
+                           android:layout_width="160dp"
+                           android:layout_height="wrap_content"
+                           app:cardCornerRadius="10dp"
+                           >
+                           <LinearLayout
+                               android:layout_width="160dp"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               android:background="@color/white">
+                               <ImageView
+                                   android:layout_width="160dp"
+                                   android:layout_height="160dp"
+                                   android:src="@drawable/pm4"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginLeft="1.5dp"
+                                   android:text="Best promotion here!"
+                                   android:textColor="@color/black"
+                                   android:layout_marginTop="5dp"/>
+                               <TextView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:text="31/12/2020"
+                                   android:layout_marginTop="1.5dp"
+                                   android:layout_marginBottom="1.5dp"
+                                   android:layout_marginRight="5dp"
+                                   android:textSize="12sp"
+                                   android:textColor="@color/note"
+                                   android:layout_gravity="end"
+                                   android:drawablePadding="1dp"
+                                   android:drawableTint="@color/note"
+                                   android:drawableStart="@drawable/deadline"/>
+
+                           </LinearLayout>
+                       </androidx.cardview.widget.CardView>
+
+                   </LinearLayout>
+
+               </TableRow>
+
+
+           </TableLayout>
+            <ImageView
+                android:layout_width="331dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ads"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

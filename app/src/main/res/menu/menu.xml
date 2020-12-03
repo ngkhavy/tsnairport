@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/booking" android:title="Booking" android:icon="@drawable/ic_android_black_24dp"/>
+    <item android:id="@+id/flight" android:title="My Flight" android:icon="@drawable/ic_android_black_24dp"/>
+    <item android:id="@+id/departures" android:title="Departures" android:icon="@drawable/ic_android_black_24dp"/>
+    <item android:id="@+id/dining" android:title="Dining &amp; Shopping" android:icon="@drawable/ic_android_black_24dp"/>
+    <item android:id="@+id/qr" android:title="Scan QR Code" android:icon="@drawable/ic_android_black_24dp"/>
+    <item android:id="@+id/map" android:title="View Map" android:icon="@drawable/ic_android_black_24dp"/>
+    <item android:id="@+id/tsn" android:title="About TSN" android:icon="@drawable/ic_android_black_24dp"/>
+</menu>

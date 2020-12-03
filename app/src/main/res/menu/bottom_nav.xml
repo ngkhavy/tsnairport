@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        
+        android:id="@+id/home2"
+        android:title="Home" android:icon="@drawable/homepage" />
+    <item
+        android:id="@+id/booking2"
+        android:title="Booking" android:icon="@drawable/booking" />
+    <item
+        android:id="@+id/explore2"
+        android:title="Explore" android:icon="@drawable/explore" />
+    <item
+        android:id="@+id/map2"
+        android:title="Map" android:icon="@drawable/map"/>
+    <item
+        android:id="@+id/noti2"
+        android:title="Notification" android:icon="@drawable/notification"/>
+</menu>
