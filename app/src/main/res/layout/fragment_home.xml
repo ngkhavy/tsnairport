@@ -94,7 +94,7 @@
                     android:backgroundTint="@color/blue"/>
 
                 <Button
-                    android:layout_marginLeft="60dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_width="135dp"
                     android:layout_height="108dp"
                     android:backgroundTint="@color/blue"
