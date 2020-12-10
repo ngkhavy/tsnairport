@@ -43,10 +43,7 @@ public class Map_floor extends Fragment {
                     Toast.makeText(getContext(), item.toString(),
                             Toast.LENGTH_SHORT).show();
                 }
-
-
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
                 // TODO Auto-generated method stub
