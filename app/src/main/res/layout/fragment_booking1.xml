@@ -11,9 +11,10 @@
         android:paddingLeft="20dp">
 
         <AutoCompleteTextView
+            android:textColor="@color/black"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:text="Tim kiem thanh pho hoac san bay"
+            android:text="Search city or airport"
             />
         <ImageView
             android:layout_width="wrap_content"
@@ -23,10 +24,21 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popular Cities or Airports"
+            android:paddingLeft="15sp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <ListView
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="match_parent"></ListView>
     </LinearLayout>

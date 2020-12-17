@@ -72,13 +72,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Đặt chuyến bay"
+                android:text="Booking"
                 android:textSize="30sp"
                 android:textColor="@color/bluefont"
                 android:textStyle="bold"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center"/>
             <LinearLayout
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -88,10 +89,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <TextView
+                        android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Từ"
-                        android:paddingLeft="25dp"
+                        android:text="From"
+                        android:paddingLeft="20dp"
                         />
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -100,7 +102,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
-                            android:src="@drawable/explore"
+                            android:src="@drawable/ic_baseline_flight_takeoff_24"
                             android:paddingLeft="24dp"
                             />
                         <LinearLayout
@@ -110,10 +112,11 @@
                             >
 
                             <EditText
-                                android:layout_width="300dp"
+                                android:textColor="@color/black"
+                                android:layout_width="310dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:hint="Sân bay A"
+                                android:hint="Airport A"
                                 android:textSize="15sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -123,9 +126,10 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
                     <TextView
+                        android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Đến"
+                        android:text="To"
                         android:paddingLeft="25dp"
                         />
                     <LinearLayout
@@ -135,7 +139,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
-                            android:src="@drawable/explore"
+                            android:src="@drawable/ic_baseline_flight_land_24"
                             android:paddingLeft="24dp"
                             />
                         <LinearLayout
@@ -145,10 +149,11 @@
                             >
 
                             <EditText
-                                android:layout_width="300dp"
+                                android:textColor="@color/black"
+                                android:layout_width="310dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:hint="Sân bay B"
+                                android:hint="Airport B"
                                 android:textSize="15sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -163,17 +168,19 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                         <TextView
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Thời gian đi"
+                            android:text="Departure Date"
                             android:paddingLeft="25dp"
                             />
                         <TextView
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="right"
                             android:paddingLeft="200dp"
-                            android:text="Khứ hồi" />
+                            android:text="Round-trip?" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -182,7 +189,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
-                            android:src="@drawable/explore"
+                            android:src="@drawable/baydi"
                             android:paddingLeft="24dp"
                             />
                         <LinearLayout
@@ -191,13 +198,13 @@
                             android:paddingLeft="25dp"
                             >
 
-                            <EditText
+                            <EditText android:textColor="@color/black"
                                 android:id="@+id/date_input1"
                                 android:inputType="none"
-                                android:layout_width="250dp"
+                                android:layout_width="260dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:hint="Chọn ngày"
+                                android:hint="Choose Date"
                                 android:textSize="15sp" />
                         </LinearLayout>
                         <Switch
@@ -213,12 +220,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:id="@+id/mycontent"
-
                     >
                     <TextView
+                        android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Thời gian về"
+                        android:text="Return Date"
                         android:paddingLeft="25dp"
                         />
                     <LinearLayout
@@ -228,7 +235,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
-                            android:src="@drawable/explore"
+                            android:src="@drawable/bayve"
                             android:paddingLeft="24dp"
                             />
                         <LinearLayout
@@ -238,12 +245,13 @@
                             >
 
                             <EditText
+                                android:textColor="@color/black"
                                 android:id="@+id/date_input2"
                                 android:inputType="none"
-                                android:layout_width="300dp"
+                                android:layout_width="310dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
-                                android:hint="Chọn ngày"
+                                android:hint="Choose Date"
                                 android:textSize="15sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -258,14 +266,16 @@
                         >
 
                         <TextView
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:paddingLeft="25dp"
-                            android:text="Hành Khách" />
+                            android:text="Passengers" />
                         <TextView
+                            android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Hạng Ghế"
+                            android:text="Seat Class"
                             android:paddingLeft="113dp"
                             />
                     </LinearLayout>
@@ -279,12 +289,13 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/explore"/>
+                                android:src="@drawable/passenger"/>
                             <LinearLayout android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="20dp"
                                 >
                                 <Spinner
+                                    android:textColor="@color/black"
                                     android:id="@+id/spinner"
                                     android:layout_width="120dp"
                                     android:layout_height="wrap_content"
@@ -298,11 +309,12 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/explore"/>
+                                android:src="@drawable/ic_baseline_airline_seat_recline_extra_24"/>
                             <LinearLayout android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="5dp">
                                 <Spinner
+                                    android:textColor="@color/black"
                                     android:layout_width="128dp"
                                     android:layout_height="wrap_content"
                                     android:textSize="15sp"
@@ -316,7 +328,7 @@
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Tìm kiếm"
+                android:text="Search"
                 android:backgroundTint="@color/blue"
                 android:id="@+id/btntimkiem"/>
         </LinearLayout>

@@ -40,10 +40,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Chuyến bay"
+                android:text="Flight"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -65,12 +65,12 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         >
-                        <TextView
+                        <TextView android:textColor="@color/black"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="22:30 - 00:00"
                             android:gravity="center"/>
-                        <TextView
+                        <TextView android:textColor="@color/black"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="DAD - SGN"
@@ -80,7 +80,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center">
-                        <TextView
+                        <TextView android:textColor="@color/black"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="550.000 VND"/>
@@ -98,7 +98,7 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:gravity="center">
-                            <TextView
+                            <TextView android:textColor="@color/black"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="Vietnam Airlines"/>
@@ -122,10 +122,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Chi tiết liên lạc"
+                android:text="Contact Details"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -134,15 +134,15 @@
             android:layout_gravity="center"
             android:background="@color/white"
             android:orientation="vertical">
-            <TextView
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BINH TA"/>
-            <TextView
+                android:text="NGOC BINH TA"/>
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="binhtn18411@st.uel.edu.vn"/>
-            <TextView
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="0337476347"/>
@@ -151,10 +151,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Thông tin hành khách"
+                android:text="Passenger Details"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -163,23 +163,23 @@
             android:layout_gravity="center"
             android:background="@color/white"
             android:orientation="vertical">
-            <TextView
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="BINH TA"/>
-            <TextView
+                android:text="NGOC BINH TA"/>
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Số hộ chiếu: AB123456"/>
+                android:text="Passport: AB123456"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Thanh toán"
+                android:text="Payment"
                 android:gravity="center"/>
         </LinearLayout>
         <LinearLayout
@@ -190,57 +190,84 @@
             android:paddingLeft="20dp"
             android:orientation="vertical"
             >
-            <TextView
+            <TextView android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nhập thông tin thẻ"/>
+                android:text="
+Enter card information"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center">
-                    <TextView
-                        android:layout_width="90dp"
+                    <TextView android:textColor="@color/black"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Tên ngân hàng"
+                        android:text="Bank of Card"
                         />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp">
-                    <EditText
-                        android:layout_width="230dp"
-                        android:layout_height="wrap_content"
-                        />
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                    >
 
+                    <EditText
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center">
-                    <TextView
+                    <TextView android:textColor="@color/black"
                         android:layout_width="90dp"
                         android:layout_height="wrap_content"
-                        android:text="Số thẻ"
+                        android:text="Card Number"
                         />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp">
+                    >
+
                     <EditText
-                        android:layout_width="230dp"
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+                    <TextView android:textColor="@color/black"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Name of Card"
                         />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -248,70 +275,44 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="90dp"
-                        android:layout_height="wrap_content"
-                        android:text="Tên thẻ"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="230dp"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp">
-                    <EditText
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
                         android:layout_width="230dp"
                         android:layout_height="wrap_content"
-                        />
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center">
-                    <TextView
-                        android:layout_width="90dp"
-                        android:layout_height="wrap_content"
-                        android:text="Ngày hết hạn"
-                        />
+                        android:orientation="vertical">
+                        <TextView android:textColor="@color/black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expire Date"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape"/>
+                    </LinearLayout>
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="100dp"
+                    android:layout_width="110dp"
                     android:layout_height="wrap_content"
+                    android:orientation="vertical"
                     android:paddingLeft="10dp">
-                    <EditText
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        />
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:paddingLeft="20dp">
-                    <TextView
+                    <TextView android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="CVC/CVV"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
                     <LinearLayout
-                        android:layout_width="50dp"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
                         <EditText
-                            android:layout_width="50dp"
+                            android:layout_width="100dp"
                             android:layout_height="wrap_content"
-                            />
+                            android:background="@drawable/shape"/>
                     </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
