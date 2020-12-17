@@ -6,9 +6,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="spinner">Spinner Example</string>
     <string-array name="numbers">
-        <item>F1</item>
-        <item>F2</item>
-        <item>F3</item>
+        <item>Floor</item>
+        <item>F1-2</item>
+        <item>F2-3</item>
 
     </string-array>
 </resources>

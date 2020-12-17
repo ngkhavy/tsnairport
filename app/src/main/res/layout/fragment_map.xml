@@ -112,6 +112,7 @@
                 android:textAllCaps="false"
                 android:textSize="15sp"
                 android:elevation="3dp"
+
                 />
             <Button
                 android:id="@+id/btnF2"
@@ -120,7 +121,8 @@
                 android:text="Floor Map"
                 android:textAllCaps="false"
                 android:textSize="15sp"
-                android:elevation="3dp"/>
+                android:elevation="3dp"
+                android:layout_marginLeft="5dp"/>
         </LinearLayout>
     </LinearLayout>
 </androidx.drawerlayout.widget.DrawerLayout>
