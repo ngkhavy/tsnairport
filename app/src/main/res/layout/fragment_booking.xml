@@ -266,6 +266,7 @@
                                 android:layout_height="wrap_content"
                                 android:paddingLeft="5dp">
                                 <Spinner
+                                    android:id="@+id/spinner1"
                                     android:textColor="@color/black"
                                     android:layout_width="128dp"
                                     android:layout_height="wrap_content"

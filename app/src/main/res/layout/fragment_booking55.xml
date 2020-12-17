@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Booking55"
     android:orientation="vertical"
     android:background="@color/backgroundmain"
     >
+
+    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
 
         android:layout_width="match_parent"
@@ -121,22 +125,22 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:orientation="vertical"
-           >
+            >
             <LinearLayout
                 android:layout_width="150dp"
                 android:layout_height="30dp"
                 android:background="@drawable/shape"
                 >
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="wrap_content"
-                   android:layout_gravity="center">
-                   <TextView android:textColor="@color/black"
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:textAlignment="center"
-                       android:text="Seat"/>
-               </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <TextView android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Seat"/>
+                </LinearLayout>
 
             </LinearLayout>
             <LinearLayout
@@ -364,4 +368,5 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>

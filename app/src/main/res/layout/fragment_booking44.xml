@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Booking44"
     android:background="@color/backgroundmain"
     android:orientation="vertical">
     <LinearLayout
@@ -87,7 +88,7 @@
                 android:text="DAD"
                 android:textColor="@color/black"
                 android:textSize="15sp"
-               />
+                />
 
             <View
 
@@ -115,7 +116,7 @@
                 android:text="2h15m"
                 android:textColor="@color/caption"
                 android:textSize="10sp"
-              />
+                />
 
             <TextView
                 android:id="@+id/textView666"
@@ -130,7 +131,7 @@
                 android:text="1 stops"
                 android:textColor="@color/caption"
                 android:textSize="10sp"
-               />
+                />
 
             <TextView
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -218,7 +219,7 @@
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:src="@drawable/logovietjet"
-                 />
+                />
 
             <ImageView
                 android:id="@+id/imageView333"
@@ -440,5 +441,7 @@ Enter card information"/>
                 android:backgroundTint="@color/blue"/>
         </LinearLayout>
     </LinearLayout>
+
+
 
 </LinearLayout>

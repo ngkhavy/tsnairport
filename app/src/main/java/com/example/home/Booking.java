@@ -23,9 +23,7 @@ public class Booking extends Fragment {
     EditText date_input1;
     EditText date_input2;
     public Booking (){
-
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
