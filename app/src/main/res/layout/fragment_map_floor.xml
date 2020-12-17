@@ -3,24 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Map_floor">
+    tools:context=".Map_floor"
+    >
 
     <!-- TODO: Update blank fragment layout -->
 
     <ImageView
+        android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/floor_1_2"
+
         />
     <Spinner
         android:id="@+id/spnCategory"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="135dp"
-        android:layout_width="60dp"
+        android:layout_marginLeft="130dp"
+        android:layout_width="70dp"
         android:layout_height="35dp"
         android:elevation="5dp"
         android:backgroundTint="@color/white"
         android:background="@drawable/shapebgsearch"
+
         />
 </FrameLayout>
