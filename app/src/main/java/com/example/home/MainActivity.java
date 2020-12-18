@@ -153,16 +153,28 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new Home()).commit();
 
+        MenuItem menu;
+
+
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Fragment fragment=null;
         switch (item.getItemId()) {
             case android.R.id.home:
                 mDrawerLayout.openDrawer(GravityCompat.START);
                 return true;
             case R.id.menuscanqr:
                 openCamera();
+            case R.id.menuaccount:
+                fragment=new Account();
+
+
+
         }
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment,fragment).commit();
+
         return super.onOptionsItemSelected(item);
     }
     private void openCamera() {
