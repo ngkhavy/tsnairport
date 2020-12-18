@@ -28,6 +28,7 @@ public class Booking extends Fragment {
     public Booking (){
     }
     @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 

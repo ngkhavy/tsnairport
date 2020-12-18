@@ -20,6 +20,7 @@ import android.widget.TextView;
 public class Booking2 extends Fragment {
 
     Layout vietjet;
+
     ImageView backtoBooking;
 
     Button btnChoose;

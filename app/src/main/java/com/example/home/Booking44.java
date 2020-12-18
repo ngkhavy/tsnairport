@@ -18,6 +18,7 @@ public class Booking44 extends Fragment {
     ImageView BacktoBooking33;
     Button btnThanhtoan;
     public Booking44() {
+
         // Required empty public constructor
     }
     @Override

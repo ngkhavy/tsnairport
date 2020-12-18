@@ -35,6 +35,7 @@ public class Booking55 extends Fragment {
                 transaction.commit();
             }
         });
+
         return view;
     }
 }
