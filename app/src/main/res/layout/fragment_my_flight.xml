@@ -27,11 +27,6 @@
                 android:layout_height="265dp"
                 android:layout_gravity="center"
                 android:src="@drawable/myflightlist" />
-
-
-
-
-
         </LinearLayout>
     </ScrollView>
 

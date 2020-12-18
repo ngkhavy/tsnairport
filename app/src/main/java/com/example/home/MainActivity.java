@@ -162,15 +162,12 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.menuscanqr:
                 openCamera();
-
-
         }
         return super.onOptionsItemSelected(item);
     }
     private void openCamera() {
         Intent intent=new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(intent,REQUEST_CODE);//mở lên lấy data trả về
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

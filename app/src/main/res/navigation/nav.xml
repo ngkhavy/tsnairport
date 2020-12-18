@@ -45,4 +45,10 @@
         android:name="com.example.home.Aboutus"
         android:label="fragment_aboutus"
         tools:layout="@layout/fragment_aboutus" />
+    <fragment
+        android:id="@+id/menuaccount"
+        android:name="com.example.home.Account"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account"
+        />
 </navigation>
