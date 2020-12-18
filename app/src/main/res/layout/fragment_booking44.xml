@@ -435,7 +435,7 @@ Enter card information"/>
                 android:id="@+id/btnThanhtoan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tiến hành thanh toán"
+                android:text="Make Payment"
                 android:backgroundTint="@color/blue"/>
         </LinearLayout>
     </LinearLayout>
