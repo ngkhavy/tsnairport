@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".Login"></activity>
         <activity android:name=".Loading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,10 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Header" />
-        <activity android:name=".Navigation"></activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".Navigation" />
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
