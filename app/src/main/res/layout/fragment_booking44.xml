@@ -13,6 +13,7 @@
         android:background="@color/blue"
         android:orientation="horizontal">
         <ImageView
+            android:id="@+id/BacktoBooking33"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:src="@drawable/back"
@@ -435,6 +436,7 @@ Enter card information"/>
             android:layout_gravity="center"
             android:backgroundTint="@color/blue">
             <Button
+                android:id="@+id/btnThanhtoan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tiến hành thanh toán"

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Booking2"
     android:orientation="vertical"
+    android:id="@+id/containerListview"
     android:background="@color/backgroundmain">
 
     <!-- TODO: Update blank fragment layout -->
@@ -50,16 +51,14 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
+     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
         android:layout_gravity="left"
         android:layout_marginTop="20dp"
         android:background="@drawable/border"
         android:backgroundTint="@color/white"
-
         >
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -133,6 +132,7 @@
             app:layout_constraintVertical_bias="0.59" />
 
         <TextView
+            android:id="@+id/txtSgn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/lableflight"
@@ -192,6 +192,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/txtDepart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Departure date"
@@ -205,6 +206,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
+            android:id="@+id/imgVnairline"
             android:layout_width="100dp"
             android:layout_height="40dp"
             android:src="@drawable/vietnamairlines"
@@ -215,16 +217,31 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.8" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="11dp"
-            android:src="@drawable/expand"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+         <ImageView
+             android:id="@+id/imageView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="16dp"
+             android:layout_marginBottom="12dp"
+             android:src="@drawable/expand"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent" />
+
+         <Button
+             android:id="@+id/textView9"
+             android:layout_width="55dp"
+             android:layout_height="24dp"
+             android:layout_marginEnd="64dp"
+             android:layout_marginBottom="12dp"
+             android:background="@drawable/lableflight"
+             android:backgroundTint="@color/blue"
+             android:text="Choose"
+             android:textColor="@color/black"
+             android:textSize="6dp"
+
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent" />
+     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="90dp"
@@ -234,6 +251,21 @@
         android:backgroundTint="@color/white"
         android:id="@+id/vietjet"
         android:clickable="true">
+
+        <Button
+            android:id="@+id/btnChoose"
+            android:layout_width="55dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/lableflight"
+            android:backgroundTint="@color/blue"
+            android:text="Choose"
+            android:textColor="@color/black"
+            android:textSize="6dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/textView222"
@@ -393,8 +425,8 @@
             android:id="@+id/imageView333"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
             android:src="@drawable/expand"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -408,6 +440,21 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/border"
         android:backgroundTint="@color/white">
+
+        <Button
+            android:id="@+id/textView14"
+            android:layout_width="55dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/lableflight"
+            android:backgroundTint="@color/blue"
+            android:text="Choose"
+            android:textColor="@color/black"
+            android:textSize="6dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/textView22"
@@ -567,8 +614,8 @@
             android:id="@+id/imageView33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="52dp"
-            android:layout_marginBottom="11dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
             android:src="@drawable/expand"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -580,31 +627,32 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="bottom"
-            android:orientation="horizontal">
-            <LinearLayout
-                android:layout_width="200dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="5dp">
+            <Button
+                android:layout_width="150dp"
+                android:text="Sort"
                 android:layout_height="wrap_content"
-                android:gravity="right"
-                android:paddingRight="5dp">
-                <Button
-                    android:layout_width="150dp"
-                    android:text="Sort"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/blue"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="200dp"
-                android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/blue"
-                    android:text="Filter"/>
-            </LinearLayout>
+                android:backgroundTint="@color/blue"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blue"
+                android:text="Filter"/>
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
