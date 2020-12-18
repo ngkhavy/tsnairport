@@ -7,8 +7,6 @@
     tools:context=".booking33"
     android:background="@color/backgroundmain"
     android:orientation="vertical">
-
-
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
