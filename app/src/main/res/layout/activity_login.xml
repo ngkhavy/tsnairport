@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/username"
             android:hint="Username"
-            android:textColor="@color/bluefont"
+            android:textColor="@color/black"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/password"
             android:hint="Password"
-            android:textColor="@color/bluefont"
+            android:textColor="@color/black"
             app:passwordToggleEnabled="true"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
