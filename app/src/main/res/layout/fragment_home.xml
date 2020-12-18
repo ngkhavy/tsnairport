@@ -40,6 +40,7 @@
                 <Button
                     android:layout_width="135dp"
                     android:layout_height="108dp"
+                    android:id="@+id/btnBooking"
                     android:text="Booking"
                     android:textColor="@color/white"
                     android:backgroundTint="@color/blue"/>
@@ -48,6 +49,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_width="135dp"
                     android:layout_height="108dp"
+                    android:id="@+id/btnScanPayment"
                     android:backgroundTint="@color/blue"
                     android:textColor="@color/white"
                     android:layout_gravity="center_vertical|center_horizontal"

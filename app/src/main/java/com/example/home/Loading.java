@@ -18,7 +18,7 @@ public class Loading extends AppCompatActivity {
                     sleep(2*1000);
 
                     // After 5 seconds redirect to another intent
-                    Intent i=new Intent(getBaseContext(),MainActivity.class);
+                    Intent i=new Intent(getBaseContext(),Login.class);
                     startActivity(i);
 
                     //Remove activity

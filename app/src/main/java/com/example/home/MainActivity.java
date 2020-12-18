@@ -17,6 +17,7 @@ import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CODE =1 ;
     BottomNavigationView bottomNavigationView;
     NavigationMenu navigationMenu;
+    Button buttonbooking;
     private DrawerLayout mDrawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                                 actionbar.setTitle("My Flight");
                                 break;
                             case R.id.departures:
-                                selectedFragment=new Booking();
+                                selectedFragment=new Departures();
                                 actionbar.setTitle("Departures");
                                 break;
                             case R.id.dining:
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                                 actionbar.setTitle("Map");
                                 break;
                             case R.id.tsn:
-                                selectedFragment=new Booking();
+                                selectedFragment=new Aboutus();
                                 actionbar.setTitle("About TSN");
                                 break;
 
@@ -150,6 +152,7 @@ public class MainActivity extends AppCompatActivity {
         };
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment,new Home()).commit();
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

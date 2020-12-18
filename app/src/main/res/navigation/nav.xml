@@ -30,4 +30,19 @@
         android:name="com.example.home.Noti"
         android:label="fragment_noti"
         tools:layout="@layout/fragment_noti" />
+    <fragment
+        android:id="@+id/myFlight"
+        android:name="com.example.home.MyFlight"
+        android:label="fragment_my_flight"
+        tools:layout="@layout/fragment_my_flight" />
+    <fragment
+        android:id="@+id/departures2"
+        android:name="com.example.home.Departures"
+        android:label="fragment_departures"
+        tools:layout="@layout/fragment_departures" />
+    <fragment
+        android:id="@+id/aboutus"
+        android:name="com.example.home.Aboutus"
+        android:label="fragment_aboutus"
+        tools:layout="@layout/fragment_aboutus" />
 </navigation>
