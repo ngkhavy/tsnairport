@@ -44,7 +44,7 @@ public class Booking extends Fragment {
         });
 
 
-        // nút search ra màn hình fragment booking 2
+        // click button search of fragment booking to transfer to fragment booking2
         btntimkiem=view.findViewById(R.id.btntimkiem);
         btntimkiem.setOnClickListener(new View.OnClickListener() {
             @Override

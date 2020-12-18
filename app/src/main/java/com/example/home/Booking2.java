@@ -30,6 +30,7 @@ public class Booking2 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_booking2, container, false);
+        // back to booking
         backtoBooking=view.findViewById(R.id.backtoBooking);
         backtoBooking.setOnClickListener(new View.OnClickListener() {
             @Override
