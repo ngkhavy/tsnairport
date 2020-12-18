@@ -3,10 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Explore"
     android:background="@color/white"
-    android:id="@+id/layoutContainerDining"
-    >
+    android:id="@+id/layoutContainerDining">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -103,20 +103,153 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_marginLeft="10dp"
-                    android:textColor="@color/bluefont"/>
+                    android:textColor="@color/bluefont"
+                    />
 
             </RelativeLayout>
-
-            <androidx.recyclerview.widget.RecyclerView
+            <GridLayout
+                android:rowCount="2"
+                android:columnCount="2"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/recycler_relax_view"
-                android:layout_marginTop="10dp"/>
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:src="@drawable/explore_lounge_ic"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/bluefont"
+                            android:text="Lounge"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+                    
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:src="@drawable/explore_manicure_ic"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/bluefont"
+                            android:text="Manicure"
+                            android:textStyle="bold"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:src="@drawable/explore_massage_ic"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/bluefont"
+                            android:text="Lounge"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="12dp"
+                    android:layout_margin="12dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:src="@drawable/explore_spa_ic"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/bluefont"
+                            android:text="Spa"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+
             <ImageView
-                android:layout_width="300dp"
-                android:layout_height="175dp"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/ads"
+                android:src="@drawable/explore_ad_1"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:layout_gravity="center"/>

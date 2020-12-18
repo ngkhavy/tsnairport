@@ -19,11 +19,10 @@ import java.util.ArrayList;
 
 
 public class Explore extends Fragment {
-    RecyclerView recyclerView, recycler_shopping_view, recycler_relax_view;
+    RecyclerView recyclerView, recycler_shopping_view;
     ArrayList<MainModel> mainModels;
     ArrayList<MainModel> shopModels;
-    ArrayList<MainModel> relaxModels;
-    MainAdapter mainAdapter,shopAdapter,relaxAdapter;
+    MainAdapter mainAdapter,shopAdapter;
 //    Button btnDining, btnShopping;
 //    ListView lvDiningExplore;
 //    String[] othersDining={"American","Appetizers","Asian","Bagel","Bakery",
@@ -92,23 +91,7 @@ public class Explore extends Fragment {
         shopAdapter=new MainAdapter(getActivity(),shopModels);
         recycler_shopping_view.setAdapter(shopAdapter);
 
-        recycler_relax_view=rootView.findViewById(R.id.recycler_relax_view);
-        Integer[] relaxImg={R.drawable.relax_1_lounge,R.drawable.relax_2_manicure,
-                R.drawable.relax_3_massage, R.drawable.pop_spa};
-        String[] relaxName={"Lounge","Manicure","Massage","Spa"};
-        relaxModels=new ArrayList<>();
-        for(int i=0;i<relaxImg.length;i++){
-            MainModel relaxmodel=new MainModel(relaxImg[i],relaxName[i]);
-            shopModels.add(relaxmodel);
-        }
-        LinearLayoutManager layoutManager3;
-        layoutManager3 = new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
 
-        recycler_shopping_view.setLayoutManager(layoutManager3);
-        recycler_shopping_view.setItemAnimator(new DefaultItemAnimator());
-
-        relaxAdapter=new MainAdapter(getActivity(),relaxModels);
-        recycler_relax_view.setAdapter(relaxAdapter);
 
         return rootView;
 
