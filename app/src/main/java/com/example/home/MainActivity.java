@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                                 actionbar.setTitle("Booking");
                                 break;
                             case R.id.flight:
-                                selectedFragment=new Booking();
+                                selectedFragment=new MyFlight();
                                 actionbar.setTitle("My Flight");
                                 break;
                             case R.id.departures:
