@@ -19,6 +19,7 @@ public class Booking44 extends Fragment {
     Button btnThanhtoan;
     public Booking44() {
 
+
         // Required empty public constructor
     }
     @Override
