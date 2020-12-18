@@ -31,7 +31,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="Chi tiết thanh toán "
+                    android:text="Payment Details "
                     android:textColor="@color/white"
                     />
             </LinearLayout>
