@@ -167,6 +167,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.menuscanqr:
                 openCamera();
+                fragment=new Home();
             case R.id.menuaccount:
                 fragment=new Account();
 
