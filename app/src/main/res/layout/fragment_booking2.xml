@@ -56,36 +56,39 @@
         android:background="@drawable/border"
         android:backgroundTint="@color/white"
         >
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="22:55"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.307"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.28" />
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/lableflight"
-            android:backgroundTint="@color/label"
-            android:text="DAD"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.306"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.36" />
-        <View
+
+         <TextView
+             android:id="@+id/textView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:padding="3dp"
+             android:text="22:55"
+             android:textColor="@color/black"
+             android:textSize="14dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.327"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.328" />
+
+         <TextView
+             android:id="@+id/textView3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/lableflight"
+             android:backgroundTint="@color/label"
+             android:text="DAD"
+             android:textColor="@color/black"
+             android:textSize="12sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.338"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toBottomOf="@+id/textView2"
+             app:layout_constraintVertical_bias="0.26" />
+
+         <View
             android:id="@+id/view"
             android:layout_width="50dp"
             android:layout_height="2dp"
@@ -126,53 +129,53 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.59" />
 
-        <TextView
-            android:id="@+id/txtSgn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/lableflight"
-            android:backgroundTint="@color/label"
-            android:text="SGN"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.281"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.333" />
+         <TextView
+             android:id="@+id/txtSgn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/lableflight"
+             android:backgroundTint="@color/label"
+             android:text="SGN"
+             android:textColor="@color/black"
+             android:textSize="12sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.258"
+             app:layout_constraintStart_toEndOf="@+id/textView3"
+             app:layout_constraintTop_toBottomOf="@+id/textView4"
+             app:layout_constraintVertical_bias="0.346" />
 
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="00:10"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.297"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.28" />
+         <TextView
+             android:id="@+id/textView4"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:padding="3dp"
+             android:text="00:10"
+             android:textColor="@color/black"
+             android:textSize="14dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.286"
+             app:layout_constraintStart_toEndOf="@+id/textView2"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.281" />
 
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
-            android:text="550.000 VND"
-            android:textColor="@color/black"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/textView2"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.315" />
+         <TextView
+             android:id="@+id/textView10"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:padding="3dp"
+             android:text="550.000 VND"
+             android:textColor="@color/black"
+             android:textSize="15sp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintHorizontal_bias="0.909"
+             app:layout_constraintStart_toEndOf="@+id/textView2"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.308" />
 
-        <TextView
+         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -226,7 +229,7 @@
              android:id="@+id/textView9"
              android:layout_width="55dp"
              android:layout_height="24dp"
-             android:layout_marginEnd="64dp"
+             android:layout_marginEnd="52dp"
              android:layout_marginBottom="12dp"
              android:background="@drawable/lableflight"
              android:backgroundTint="@color/blue"
@@ -251,7 +254,7 @@
             android:id="@+id/btnChoose"
             android:layout_width="55dp"
             android:layout_height="24dp"
-            android:layout_marginEnd="64dp"
+            android:layout_marginEnd="52dp"
             android:layout_marginBottom="12dp"
             android:background="@drawable/lableflight"
             android:backgroundTint="@color/blue"
@@ -269,13 +272,13 @@
             android:padding="3dp"
             android:text="8:00"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintHorizontal_bias="0.336"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.28" />
+            app:layout_constraintVertical_bias="0.312" />
 
         <TextView
             android:id="@+id/textView333"
@@ -285,13 +288,13 @@
             android:backgroundTint="@color/label"
             android:text="DAD"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintHorizontal_bias="0.333"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView222"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintVertical_bias="0.384" />
 
         <View
 
@@ -301,9 +304,10 @@
             android:backgroundTint="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.451"
+            app:layout_constraintHorizontal_bias="0.479"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.522" />
 
         <TextView
             android:id="@+id/textView555"
@@ -314,7 +318,7 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.455"
+            app:layout_constraintHorizontal_bias="0.478"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.342" />
@@ -328,10 +332,10 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.455"
+            app:layout_constraintHorizontal_bias="0.481"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.578" />
+            app:layout_constraintVertical_bias="0.631" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -340,10 +344,10 @@
             android:backgroundTint="@color/label"
             android:text="SGN"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.281"
+            app:layout_constraintHorizontal_bias="0.271"
             app:layout_constraintStart_toEndOf="@+id/textView333"
             app:layout_constraintTop_toBottomOf="@+id/textView444"
             app:layout_constraintVertical_bias="0.333" />
@@ -355,13 +359,13 @@
             android:padding="3dp"
             android:text="10:15"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.297"
+            app:layout_constraintHorizontal_bias="0.298"
             app:layout_constraintStart_toEndOf="@+id/textView222"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.28" />
+            app:layout_constraintVertical_bias="0.312" />
 
         <TextView
             android:id="@+id/textView1000"
@@ -370,13 +374,13 @@
             android:padding="3dp"
             android:text="550.000 VND"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toEndOf="@+id/textView222"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.315" />
+            app:layout_constraintVertical_bias="0.312" />
 
         <TextView
             android:id="@+id/textView777"
@@ -440,8 +444,8 @@
             android:id="@+id/textView14"
             android:layout_width="55dp"
             android:layout_height="24dp"
-            android:layout_marginEnd="64dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/lableflight"
             android:backgroundTint="@color/blue"
             android:text="Choose"
@@ -458,13 +462,13 @@
             android:padding="3dp"
             android:text="13:30"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.307"
+            app:layout_constraintHorizontal_bias="0.327"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.28" />
+            app:layout_constraintVertical_bias="0.281" />
 
         <TextView
             android:id="@+id/textView33"
@@ -474,13 +478,13 @@
             android:backgroundTint="@color/label"
             android:text="DAD"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintHorizontal_bias="0.319"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView22"
-            app:layout_constraintVertical_bias="0.36" />
+            app:layout_constraintVertical_bias="0.307" />
 
         <View
 
@@ -529,7 +533,7 @@
             android:backgroundTint="@color/label"
             android:text="SGN"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.281"
@@ -544,7 +548,7 @@
             android:padding="3dp"
             android:text="15:00"
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.297"
@@ -559,13 +563,13 @@
             android:padding="3dp"
             android:text="550.000 VND"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.9"
             app:layout_constraintStart_toEndOf="@+id/textView22"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.315" />
+            app:layout_constraintVertical_bias="0.281" />
 
         <TextView
             android:id="@+id/textView77"
