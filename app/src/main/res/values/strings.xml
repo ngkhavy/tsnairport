@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Home</string>
+    <string name="app_name">TSN Airport</string>
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
